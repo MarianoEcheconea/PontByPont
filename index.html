@@ -1,0 +1,170 @@
+<!-- La declración de <!DOCTYPE html> se utiliza para indicarle al navegador que este documento es un HTML 5 -->
+<!DOCTYPE html>
+<!-- La etiqueta <html> indica el inicio/raiz del documento y el atributo lang="es" indica el idioma del sitio. En este caso "es" = "español" -->
+<html lang="es">
+
+    <!-- En el <head> van instrucciones específicas para el navegador -->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="HTML, CSS, Javascript, curso, tutorial, aprendiendo, tribia">
+
+        <!-- Archivo CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <!-- Título que se muestra en la pestaña del navegador web -->
+        <title>PONT by PONT</title>
+    </head>
+
+    <!-- En el <body> va todo el contenido que queremos que el usuario vea -->
+    <body>
+        
+        <header class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Avellaneda Park Land</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#play">¡Jugar!</a>
+                        </li>
+                    </ul>
+                </div>
+              </nav>
+        </header>
+
+        <section class="jumbotron jumbotron-fluid" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm py-3">
+                        <h1 class="display-3">¡Bienvenid@!</h1>
+                        <p class="lead">Mucha gente estuvo diciendo por ahí que me conoce...  ¿Te animás a responder 3/3? Si perdés hay prenda, tenés que mandarme una canción por audio de WhatsApp</p>
+                        <hr class="my-4">
+                        <p>Antes de comenzar a jugar deberás conocer las instrucciones. Tendrás que contestar 3 preguntas correctamente sobre mí. Cada pregunta tendrá opciones y una sola es será la correcta. Muchas suerte.</p>
+                        <a class="btn btn-primary btn-lg" href="#play" role="button">Jugar</a>
+                    </div>
+                    <div class="col-sm py-3">
+                        <img src="assets/images/perfil.jpeg" class="img-fluid rounded" alt="Imagen de perfil">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="play">
+            
+            <!-- Formulario con las preguntas y respuestas -->
+            <form>
+                <!-- Pregunta 1 -->
+                <fieldset>
+                    <!-- Acá va la pregunta escrita -->
+                    <legend>1. ¿Qué hago mejor?</legend>
+                    <!-- Acá van las opciones. Cada respuesta puede tener muchas opciones y más de una correcta -->
+                    <div class="form-check">
+                         <!-- Importante por cada opción incorrecta indicarla con value="false" -->
+                        <input class="form-check-input" type="radio" name="group1" value="false">
+                        <label class="form-check-label">
+                            <!-- Acá se escribre la respuesta posible -->
+                            Diseñar
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <!-- Importante por cada opción correcta indicarla con value="true" -->
+                        <input class="form-check-input" type="radio" name="group1" value="true">
+                        <label class="form-check-label">
+                            Escuchar
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="group1" value="false">
+                        <label class="form-check-label">
+                            Programar
+                        </label>
+                    </div>
+                </fieldset>
+                <!-- Linea divisora -->
+                <hr class="my-4">
+
+                <!-- Pregunta 2 -->
+                <fieldset>
+                    <legend>2. ¿A quién banco más de estos pibes?</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="group2" value="true">
+                        <label class="form-check-label">
+                            Confucio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="group2" value="false">
+                        <label class="form-check-label">
+                            Krishnamurti
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="group2" value="false">
+                        <label class="form-check-label">
+                            Heráclito
+                        </label>
+                    </div>
+                </fieldset>
+                <!-- Linea divisora -->
+                <hr class="my-4">
+
+                   <!-- Pregunta 3 -->
+                   <fieldset>
+                    <!-- Acá va la pregunta escrita -->
+                    <legend>3. ¿Qué juego me gusta menos</legend>
+                    <!-- Acá van las opciones. Cada respuesta puede tener muchas opciones y más de una correcta -->
+                    <div class="form-check">
+                         <!-- Importante por cada opción incorrecta indicarla con value="false" -->
+                        <input class="form-check-input" type="radio" name="group1" value="false">
+                        <label class="form-check-label">
+                            <!-- Acá se escribre la respuesta posible -->
+                            Dixit
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <!-- Importante por cada opción correcta indicarla con value="False" -->
+                        <input class="form-check-input" type="radio" name="group3" value="false">
+                        <label class="form-check-label">
+                            HDP
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="group3" value="true">
+                        <label class="form-check-label">
+                            Ajedrez
+                        </label>
+                    </div>
+                </fieldset>
+                <!-- Linea divisora -->
+                <hr class="my-4">
+
+                <button type="button" class="btn btn-success btn-lg btn-block" onclick="check()">¡Listo!</button>
+
+            </form>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Copyright -->
+            <div class="text-light bg-dark text-center mt-5 py-4">© 2020 Copyright:
+                <a href="#">misitioweb.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="assets/js/scripts.js"></script>
+    </body>
+
+</html>
