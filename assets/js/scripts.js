@@ -6,6 +6,7 @@ function check(){
 
     //Declaramos la variable donde vamos a guardar la cantidad de respuestas correctas.
     var correctAnswers = 0;
+    var finalResult = "";
 
     //Obtenemos todas las etiquetas <fieldset> y sus etiquetas hijas.
     var fieldsetGroup = document.getElementsByTagName("fieldset");
@@ -29,9 +30,16 @@ function check(){
             }else{/*No hacemos nada*/}
         }
     }
+    
+    if(fieldsetGroup.length == correctAnswers){
+        finalResult = "Ganaste, sos crack!"
+    }else{
+        finalResult = "Noooo re perdiste!"
+    }
 
-    console.log("Se han detectado "+fieldsetGroup.length+" preguntas. De las cuales "+correctAnswers+" han sido respondidas correctamente.")
-
+    //Mostramos por consola la respuesta
+    console.log(finalResult+" Se han detectado "+correctAnswers+" respuestas correctas de "+fieldsetGroup.length+".")
+    alert(finalResult+" Se han detectado "+fieldsetGroup.length+" preguntas. De las cuales "+correctAnswers+" han sido respondidas correctamente.");
     
 }
 
